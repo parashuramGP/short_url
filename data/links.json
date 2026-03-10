@@ -1,0 +1,118 @@
+{
+  "links": [
+    {
+      "id": "3b30ba67-b2b5-42a1-88bb-f8b0f7587db8",
+      "code": "demo1234",
+      "url": "https://openai.com/",
+      "createdAt": "2026-03-10T12:55:17.077Z",
+      "expiresAt": null,
+      "clicks": 1,
+      "lastAccessedAt": "2026-03-10T12:55:17.088Z",
+      "clickHistory": [
+        {
+          "timestamp": "2026-03-10T12:55:17.088Z",
+          "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7920",
+          "referrer": ""
+        }
+      ]
+    },
+    {
+      "id": "54575910-06c8-45a0-9b09-37bbcdc3508a",
+      "code": "demo92361",
+      "url": "https://openai.com/",
+      "createdAt": "2026-03-10T12:55:29.286Z",
+      "expiresAt": null,
+      "clicks": 0,
+      "lastAccessedAt": null,
+      "clickHistory": []
+    },
+    {
+      "id": "4604f367-a5b9-4c2b-8f98-c80cb8d5766e",
+      "code": "demo96212",
+      "url": "https://openai.com/",
+      "createdAt": "2026-03-10T12:55:53.270Z",
+      "expiresAt": null,
+      "clicks": 1,
+      "lastAccessedAt": "2026-03-10T12:55:53.331Z",
+      "clickHistory": [
+        {
+          "timestamp": "2026-03-10T12:55:53.331Z",
+          "userAgent": "curl/8.18.0",
+          "referrer": ""
+        }
+      ]
+    },
+    {
+      "id": "639b03ed-5cf7-4ca7-acd3-55192ad90834",
+      "code": "demo1711",
+      "url": "https://openai.com/",
+      "createdAt": "2026-03-10T12:56:31.152Z",
+      "expiresAt": null,
+      "clicks": 1,
+      "lastAccessedAt": "2026-03-10T12:56:31.217Z",
+      "clickHistory": [
+        {
+          "timestamp": "2026-03-10T12:56:31.217Z",
+          "userAgent": "curl/8.18.0",
+          "referrer": ""
+        }
+      ]
+    },
+    {
+      "id": "7a40427a-cd92-4e70-8290-d4a454e15201",
+      "code": "aAftUw",
+      "url": "https://app.videosdk.live/dashboard/LKATGXHE6U05",
+      "createdAt": "2026-03-10T13:09:12.765Z",
+      "expiresAt": null,
+      "clicks": 0,
+      "lastAccessedAt": null,
+      "clickHistory": []
+    },
+    {
+      "id": "70e62001-02f1-4824-ba8a-e9a2247cb5ad",
+      "code": "WNRhuw",
+      "url": "https://app.videosdk.live/dashboard/LKATGXHE6U05",
+      "createdAt": "2026-03-10T13:09:31.753Z",
+      "expiresAt": null,
+      "clicks": 0,
+      "lastAccessedAt": null,
+      "clickHistory": []
+    },
+    {
+      "id": "28139a61-9b17-40d4-8e53-4501c810b5ff",
+      "code": "Gj1LjA",
+      "url": "https://app.videosdk.live/dashboard/LKATGXHE6U05",
+      "createdAt": "2026-03-10T13:09:49.393Z",
+      "expiresAt": null,
+      "clicks": 1,
+      "lastAccessedAt": "2026-03-10T13:10:44.412Z",
+      "clickHistory": [
+        {
+          "timestamp": "2026-03-10T13:10:44.412Z",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+          "referrer": ""
+        }
+      ]
+    },
+    {
+      "id": "dd98c594-7b9b-4e8b-b735-b76454715639",
+      "code": "myownurl",
+      "url": "https://www.cricbuzz.com/live-cricket-scores/139489/ind-vs-nz-final-icc-mens-t20-world-cup-2026",
+      "createdAt": "2026-03-10T13:11:18.577Z",
+      "expiresAt": null,
+      "clicks": 1,
+      "lastAccessedAt": "2026-03-10T13:11:28.019Z",
+      "clickHistory": [
+        {
+          "timestamp": "2026-03-10T13:11:28.019Z",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+          "referrer": ""
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "linksCreated": 8,
+    "totalClicks": 5
+  }
+}

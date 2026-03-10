@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseLink | Real-Time URL Shortener</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Real-time URL management</p>
+          <h1>Build, share, and monitor short links from one live dashboard.</h1>
+          <p class="hero-text">
+            PulseLink creates branded short URLs, tracks clicks instantly, and updates analytics without page refreshes.
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="stat-label">Live platform totals</div>
+          <div class="hero-stats">
+            <div>
+              <span id="total-links">0</span>
+              <small>Links created</small>
+            </div>
+            <div>
+              <span id="total-clicks">0</span>
+              <small>Total clicks</small>
+            </div>
+            <div>
+              <span id="active-links">0</span>
+              <small>Active links</small>
+            </div>
+          </div>
+          <p class="live-indicator"><span></span> Synced over server-sent events</p>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel form-panel">
+          <div class="panel-head">
+            <h2>Create short link</h2>
+            <p>Paste a destination, optionally set a custom alias and expiration.</p>
+          </div>
+          <form id="create-form" class="create-form" method="post" action="/">
+            <label>
+              Destination URL
+              <input id="url" name="url" type="url" placeholder="https://example.com/article" required />
+            </label>
+            <label>
+              Custom code
+              <input id="customCode" name="customCode" type="text" placeholder="launch2026" maxlength="32" />
+            </label>
+            <label>
+              Expiration
+              <input id="expiresAt" name="expiresAt" type="datetime-local" />
+            </label>
+            <button type="submit">Create short URL</button>
+            <p id="form-message" class="form-message" role="status"></p>
+          </form>
+          <section id="result-card" class="result-card hidden" aria-live="polite">
+            <h3 class="result-title">Your Short URL</h3>
+            <p class="result-label">Use this link instead of the big original URL.</p>
+            <a id="result-link" class="result-link" target="_blank" rel="noreferrer"></a>
+            <p id="result-destination" class="result-destination"></p>
+            <button id="result-copy" type="button">Copy short URL</button>
+          </section>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Top performing links</h2>
+            <p>Updated automatically as visits happen.</p>
+          </div>
+          <div id="top-links" class="top-links empty-state">No traffic yet.</div>
+        </section>
+
+        <section class="panel links-panel">
+          <div class="panel-head">
+            <h2>Managed links</h2>
+            <p>Copy, inspect, and remove links from the workspace.</p>
+          </div>
+          <div id="links-list" class="links-list empty-state">No shortened URLs yet.</div>
+        </section>
+      </main>
+    </div>
+
+    <template id="link-template">
+      <article class="link-card">
+        <div class="link-main">
+          <div class="link-meta">
+            <strong class="link-code"></strong>
+            <span class="link-clicks"></span>
+          </div>
+          <a class="link-short" target="_blank" rel="noreferrer"></a>
+          <p class="link-url"></p>
+          <div class="link-foot">
+            <span class="link-created"></span>
+            <span class="link-expiry"></span>
+          </div>
+        </div>
+        <div class="link-actions">
+          <button class="copy-button" type="button">Copy</button>
+          <button class="delete-button danger" type="button">Delete</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
