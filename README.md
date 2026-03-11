@@ -1,4 +1,4 @@
-# PulseLink
+# shortlink
 
 PulseLink is a real-time URL shortener built with plain Node.js, file-backed storage, and a responsive analytics dashboard.
 
